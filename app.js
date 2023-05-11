@@ -7,7 +7,7 @@ app.listen(3000, () => {
     console.log("Servidor levantandose");
 });
 
-app.get("/",(req,res)=>{
+app.get("/home",(req,res)=>{
     res.send("Hola");
 })
 // http://localhost:3000/
