@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Automatización de Tareas</title>
+</head>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        table-layout: fixed;
+    }
+    td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+        vertical-align: middle;
+        height: 100px;
+    }
+    /* Colores para los días de la semana */
+    td:first-child, td:nth-child(7) {
+        background-color: #d8e7ff;
+    }
+    /* Colores para los fines de semana */
+    td:nth-child(6), td:nth-child(7) {
+        background-color: #ffe2e2;
+    }
+    /* Colores para los meses */
+    .mes {
+        background-color: #d1f3d1;
+    }
+</style>
+
+
+<table>
+    <thead>
+        <tr>
+            <th colspan="7">Mayo 2023</th>
+        </tr>
+        <tr>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miércoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+            <th>Sábado</th>
+            <th>Domingo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>1</td>
+            <td class="mes">2</td>
+            <td class="mes">3</td>
+        </tr>
+        <tr>
+            <td class="mes">4</td>
+            <td class="mes">5</td>
+            <td class="mes">6</td>
+            <td class="mes">7</td>
+            <td class="mes">8</td>
+            <td>9</td>
+            <td>10</td>
+        </tr>
+        <!-- y así sucesivamente para el resto de los días -->
+    </tbody>
+</table>
+
+<body>
+	<h1>Automatización de Tareas</h1>
+	
+	<form>
+		<label for="nombre">Nombre:</label>
+		<input type="text" id="nombre" name="nombre"><br>
+		
+		<label for="horas_trabajadas">Horas Trabajadas:</label>
+		<input type="number" id="horas_trabajadas" name="horas_trabajadas"><br>
+		
+		<label for="tiempo_trabajo">Tiempo de Trabajo:</label>
+		<input type="time" id="tiempo_trabajo" name="tiempo_trabajo"><br>
+		
+		<label for="porcentaje_finalizacion">Porcentaje de Finalización del Trabajo:</label>
+		<input type="number" id="porcentaje_finalizacion" name="porcentaje_finalizacion"><br>
+		
+		<input type="submit" value="Enviar">
+	</form>
+    
+
+
+</body>
+</html>

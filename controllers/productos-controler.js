@@ -1,7 +1,4 @@
 const productos_controlador = {
-    index:(req,res)=>{
-        res.send("Aca estan todos los productos");
-    },
     crear:(req,res)=>{
         res.send("Creemos un producto ! ");
     },
