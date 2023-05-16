@@ -1,10 +1,9 @@
 const productos_controlador = {
     crear:(req,res)=>{
-        res.send("Creemos un producto ! ");
+        res.render("productos");
     },
     detalle:(req,res)=>{
-        
-        res.sendFile(path.join(__dirname,"../views/productos.html"))
+        res.render("productos");
     }
 }
 module.exports = productos_controlador;
