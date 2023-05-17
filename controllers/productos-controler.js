@@ -1,9 +1,9 @@
 const productos_controlador = {
     crear:(req,res)=>{
-        res.render("productos");
+        res.render("crear-producto");
     },
     detalle:(req,res)=>{
-        res.render("productos");
+        res.render("detalle-producto");
     }
 }
 module.exports = productos_controlador;

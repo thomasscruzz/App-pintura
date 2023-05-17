@@ -3,7 +3,7 @@ const main_controller = {
         res.render("home");
     },
     crearCuenta:(req,res)=>{
-        res.render("creat-account");
+        res.render("crear-cuenta");
     },
     loggin:(req,res)=>{
         res.render("loggin");
