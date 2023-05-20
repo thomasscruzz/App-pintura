@@ -7,7 +7,7 @@ const mainRouter=require("./routes/main.js");
 
 app.use(express.static(carpeta_styles));
 
-app.use("/productos", productosRouter);
+app.use("/products", productosRouter);
 app.use("/", mainRouter);
 
 app.listen(3000, () => { console.log("Servidor levantado"); });
