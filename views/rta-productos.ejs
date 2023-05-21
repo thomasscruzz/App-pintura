@@ -1,0 +1,18 @@
+<html>
+    <style>
+        ul,li{
+            font-size: 50px;
+        }
+    </style>
+    <body>
+        <h1>Productos registrados en el almacen</h1>
+        <ul>
+            <% for (let i=0; i<rtaProductos.length ;i++) { %>
+                <li>
+                    <a href="/products/detail/<%= rtaProductos[i].id %>"><%= rtaProductos[i].name %></a>
+                </li>
+            <% } %>
+        </ul>
+       
+    </body>
+</html>
