@@ -16,7 +16,7 @@ const productos_controlador = {
         res.render("productos-registrados",{"productos":productos});
     },
     searchProducts:(req,res)=>{
-        let busquedaProductos=req.query.busqueda;
+        let busquedaProductos=req.query.busqueda; // valor de busqueda por url
          let productos=[
              {id:1, name:"martillo"},
              {id:2, name:"pincel"},
@@ -31,7 +31,7 @@ const productos_controlador = {
                 rtaProductos.push(productos[i]);
             }
          }
-         res.render("rta-productos", {rtaProductos: rtaProductos} );
+         res.render("rta-productos", {rtaProductos: rtaProductos} ); // pag para renderizar los productos
     },
 }
 module.exports = productos_controlador;
